@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
@@ -15,7 +16,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:textSize="35sp"
-            android:text="Budget Vacance"
+            android:text="Add Montant"
             android:paddingBottom="10dp"/>
         <LinearLayout
             android:gravity="right"
@@ -29,57 +30,48 @@
                 android:layout_height="match_parent"/>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
-        android:id="@+id/l2"
-        android:layout_below="@+id/l1"
-        android:background="@color/yellow"
-        android:orientation="vertical"
-        android:padding="10dp"
-        android:layout_marginTop="30dp"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:text="Budget total"
-                android:layout_width="wrap_content"
-                android:textSize="35sp"
-                android:layout_marginEnd="15dp"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:layout_marginEnd="15dp"
-                android:text="2000"
-                android:textSize="35sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:text="€"
-                android:textSize="35sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:id="@+id/l3"
-        android:layout_width="match_parent"
+        android:layout_below="@+id/l1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/l2"
-        android:layout_height="wrap_content">
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="150dp"
+            android:autofillHints="true"
+            android:ems="15"
+            android:hint="@string/label"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/prix"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="true"
+            android:ems="15"
+            android:hint="Montant"
+            android:inputType="number" />
+
         <Button
-            android:id="@+id/btn_AddMontante"
-            android:textColor="@color/black"
-            android:background="@color/yellow"
-            android:text="Ajouter un motant"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"/>
+            android:id="@+id/btn_addMontant"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="@string/add"
+            android:textSize="20sp" />
+
     </LinearLayout>
 
     <LinearLayout

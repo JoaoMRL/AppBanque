@@ -26,6 +26,10 @@
             android:exported="false" >
         </activity>
         <activity
+            android:name=".AddMontantActivity"
+            android:exported="false" >
+        </activity>
+        <activity
             android:name=".budget_choice_activity"
             android:exported="false" >
         </activity>
