@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AppBanque</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="Titre">Banquette Super</string>
+    <string name="inscription">Inscription</string>
+    <string name="alreadyAcc">Vous avez déja un compte clic ici!</string>
+    <string name="title_activity_inscription">InscriptionActivity</string>
+    <string name="vous_connectez">Connection</string>
+    <string name="noAcc">Si vous n\'avez pas de compte click ici</string>
+    <string name="title_activity_accueil">AccueilActivity</string>
+    <string name="allDepense">Dépense Total:</string>
+    <string name="addDepense">Ajouter une dépense</string>
+    <string name="prix">Prix</string>
+    <string name="label">Label</string>
+    <string name="add">Ajouter</string>
+
+</resources>

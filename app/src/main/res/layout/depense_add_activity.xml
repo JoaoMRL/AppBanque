@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/l1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="Add Dépense"
+            android:paddingBottom="10dp"/>
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="Déco"
+                android:textColor="@color/black"
+                android:background="@color/yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_below="@+id/l1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+
+        <EditText
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ems="15"
+            android:layout_marginTop="150dp"
+            android:inputType="text"
+            android:hint="@string/label"
+            android:autofillHints="true" />
+
+        <EditText
+            android:id="@+id/prix"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ems="15"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:hint="@string/prix"
+            android:autofillHints="true" />
+
+        <Button
+            android:id="@+id/btn_addDepense"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:layout_marginTop="90dp"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_Budget"
+            android:text="Budget"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_Acceuil"
+            android:text="Accueil"
+            android:textColor="@color/black"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_Plus"
+            android:text="Plus"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/l1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="Pallier de dépense"
+            android:paddingBottom="10dp"/>
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="Déco"
+                android:textColor="@color/black"
+                android:background="@color/yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/PallierDepense"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="150dp"
+            android:autofillHints="true"
+            android:ems="15"
+            android:enabled="false"
+            android:hint="Pallier Dépensé :     2000 €"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/NewPallierDepense"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="true"
+            android:ems="15"
+            android:hint="Nouveau Pallier :   "
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_Inscription"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="Modifier le pallier"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_Budget"
+            android:text="Budget"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_Acceuil"
+            android:text="Accueil"
+            android:textColor="@color/black"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_Plus"
+            android:text="Plus"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>

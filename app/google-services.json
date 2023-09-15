@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "334412273012",
+    "project_id": "appbanquet",
+    "storage_bucket": "appbanquet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334412273012:android:3aabd11071997295bd0821",
+        "android_client_info": {
+          "package_name": "com.example.appbanque"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8kFdL8LssRp4fLrMySAc1LBq90YMUc8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
